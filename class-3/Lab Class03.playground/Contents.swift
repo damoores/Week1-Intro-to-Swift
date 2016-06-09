@@ -11,96 +11,96 @@ import UIKit
 //
 
 
+//
+//protocol Identity {
+//    var taskName: String {get set}
+//    var dateCreated: String {get set}
+//    var dateToFinish: String {get set}
+//    var taskFinished: Bool {get set}
+//    var id: String {get set}
+//    
+//    }
+//
+//extension Task {
+//    func description() -> String {
+//        return "Task '\(self.taskName)' completed status: \(taskFinished)"
+//    }
+//}
+//
+//class Task: Identity {
+//    var taskName: String
+//    var dateCreated: String
+//    var dateToFinish: String
+//    var taskFinished: Bool
+//    var id: String
+//    
+//    init (taskName: String, dateCreated: String, dateToFinish: String, taskFinished: Bool ) {
+//        self.taskName = taskName
+//        self.dateCreated = dateCreated
+//        self.dateToFinish = dateToFinish
+//        self.taskFinished = taskFinished
+//        self.id = NSUUID().UUIDString
+//    }
+//}
 
-protocol Identity {
-    var taskName: String {get set}
-    var dateCreated: String {get set}
-    var dateToFinish: String {get set}
-    var taskFinished: Bool {get set}
-    var id: String {get set}
-    
-    }
+//protocol Storage: class {
+//    associatedtype Object: Identity
+//    
+//    var tasks: [Object] {get set}
+//    func removeTask(task: Object)
+//    func addTask(task: Object)
+//    func markTaskFinished(taskName: String) -> String
+//    func taskCount() -> Int
+//    func objectAtIndex(index: Int) -> Object
+//    func allObjects() -> [Object]
+//    
+//    
+//}
 
-extension Task {
-    func description() -> String {
-        return "Task '\(self.taskName)' completed status: \(taskFinished)"
-    }
-}
+//extension Storage {
+//    
+//    func addTask(object: Object) {
+//        tasks.append(object)
+//    }
+//    
+//    func removeTask(object: Object) {
+//        self.tasks = self.tasks.filter({ (task) -> Bool in
+//            return object.id != task.id
+//        })
+//    }
+//    
+//    func markTaskFinished(taskName: String) -> String {
+//        var taskToMark = self.tasks.filter( {(task) -> Bool in
+//            task.taskName == taskName
+//        })
+//        taskToMark[0].taskFinished = true
+//        return "\(taskName) was marked finished"
+//        
+//    }
+//    
+//    func taskCount() -> Int {
+//        return tasks.count
+//    }
+//    
+//    func objectAtIndex(index: Int) -> Object {
+//        return tasks[index]
+//    }
+//    
+//    func allObjects() -> [Object] {
+//        print(tasks)
+//        return tasks
+//    }
+//
+//}
 
-class Task: Identity {
-    var taskName: String
-    var dateCreated: String
-    var dateToFinish: String
-    var taskFinished: Bool
-    var id: String
-    
-    init (taskName: String, dateCreated: String, dateToFinish: String, taskFinished: Bool ) {
-        self.taskName = taskName
-        self.dateCreated = dateCreated
-        self.dateToFinish = dateToFinish
-        self.taskFinished = taskFinished
-        self.id = NSUUID().UUIDString
-    }
-}
-
-protocol Storage: class {
-    associatedtype Object: Identity
-    
-    var tasks: [Object] {get set}
-    func removeTask(task: Object)
-    func addTask(task: Object)
-    func markTaskFinished(taskName: String) -> String
-    func taskCount() -> Int
-    func objectAtIndex(index: Int) -> Object
-    func allObjects() -> [Object]
-    
-    
-}
-
-extension Storage {
-    
-    func addTask(object: Object) {
-        tasks.append(object)
-    }
-    
-    func removeTask(object: Object) {
-        self.tasks = self.tasks.filter({ (task) -> Bool in
-            return object.id != task.id
-        })
-    }
-    
-    func markTaskFinished(taskName: String) -> String {
-        var taskToMark = self.tasks.filter( {(task) -> Bool in
-            task.taskName == taskName
-        })
-        taskToMark[0].taskFinished = true
-        return "\(taskName) was marked finished"
-        
-    }
-    
-    func taskCount() -> Int {
-        return tasks.count
-    }
-    
-    func objectAtIndex(index: Int) -> Object {
-        return tasks[index]
-    }
-    
-    func allObjects() -> [Object] {
-        print(tasks)
-        return tasks
-    }
-
-}
-
-class TaskStore: Storage {
-    
-    static let shared = TaskStore()
-    private init() {}
-    typealias Object = Task
-    var tasks = [Object]()
-
-    }
+//class TaskStore: Storage {
+//    
+//    static let shared = TaskStore()
+//    private init() {}
+//    typealias Object = Task
+//    var tasks = [Object]()
+//
+//    }
 
 let taskOne = Task(taskName: "Get Beer", dateCreated: "6-8-16", dateToFinish: "ASAP", taskFinished: false)
 
