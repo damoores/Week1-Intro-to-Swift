@@ -19,19 +19,15 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="We_Can_Do_It!.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="xV4-de-uvg">
                                 <rect key="frame" x="146" y="125" width="308" height="350"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="qZs-Xd-q63"/>
-                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="xV4-de-uvg" secondAttribute="bottom" id="0Pe-c1-lha"/>
-                            <constraint firstItem="xV4-de-uvg" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" id="HKY-Lf-6Aa"/>
-                            <constraint firstAttribute="trailing" secondItem="xV4-de-uvg" secondAttribute="trailing" id="gc6-Ul-yR7"/>
-                            <constraint firstItem="xV4-de-uvg" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="hvI-of-4t0"/>
-                            <constraint firstItem="xV4-de-uvg" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="i6g-he-eG7"/>
-                            <constraint firstItem="xV4-de-uvg" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="jeb-8U-LAr"/>
+                            <constraint firstItem="xV4-de-uvg" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Ncr-ne-Zam"/>
+                            <constraint firstAttribute="trailing" secondItem="xV4-de-uvg" secondAttribute="trailing" constant="8" id="VLY-eo-aya"/>
+                            <constraint firstItem="xV4-de-uvg" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="8" id="Xro-U1-OBg"/>
+                            <constraint firstItem="xV4-de-uvg" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="8" id="i65-Z9-Ieu"/>
+                            <constraint firstItem="xV4-de-uvg" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="k9h-Jq-cjD"/>
                         </constraints>
                     </view>
                 </viewController>

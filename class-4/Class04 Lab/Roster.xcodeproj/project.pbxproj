@@ -18,8 +18,8 @@
 		704E8FEE1D09F7B80031DE78 /* TaskStoreProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704E8FED1D09F7B80031DE78 /* TaskStoreProtocol.swift */; };
 		704E8FF01D0A22840031DE78 /* Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704E8FEF1D0A22830031DE78 /* Additions.swift */; };
 		704E8FF51D0A411B0031DE78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 704E8FF41D0A411B0031DE78 /* Assets.xcassets */; };
-		704E8FF71D0A417E0031DE78 /* We_Can_Do_It!.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 704E8FF61D0A417E0031DE78 /* We_Can_Do_It!.jpg */; };
-		704E8FF91D0A5B5C0031DE78 /* you-can-do-eet.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 704E8FF81D0A5B5C0031DE78 /* you-can-do-eet.jpeg */; };
+		704E8FFB1D0B23CB0031DE78 /* We_Can_Do_It!.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 704E8FFA1D0B23CB0031DE78 /* We_Can_Do_It!.jpg */; };
+		704E8FFD1D0B23DD0031DE78 /* you-can-do-eet.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 704E8FFC1D0B23DD0031DE78 /* you-can-do-eet.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,8 +36,8 @@
 		704E8FED1D09F7B80031DE78 /* TaskStoreProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskStoreProtocol.swift; sourceTree = "<group>"; };
 		704E8FEF1D0A22830031DE78 /* Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Additions.swift; sourceTree = "<group>"; };
 		704E8FF41D0A411B0031DE78 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../.Trash/Assets.xcassets; sourceTree = "<group>"; };
-		704E8FF61D0A417E0031DE78 /* We_Can_Do_It!.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "We_Can_Do_It!.jpg"; path = "../../We_Can_Do_It!.jpg"; sourceTree = "<group>"; };
-		704E8FF81D0A5B5C0031DE78 /* you-can-do-eet.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "you-can-do-eet.jpeg"; path = "../../you-can-do-eet.jpeg"; sourceTree = "<group>"; };
+		704E8FFA1D0B23CB0031DE78 /* We_Can_Do_It!.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "We_Can_Do_It!.jpg"; path = "../../../../../Desktop/We_Can_Do_It!.jpg"; sourceTree = "<group>"; };
+		704E8FFC1D0B23DD0031DE78 /* you-can-do-eet.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "you-can-do-eet.jpeg"; path = "../../../../../Desktop/you-can-do-eet.jpeg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +96,7 @@
 			children = (
 				704E8FF11D0A406F0031DE78 /* Images */,
 				704E8FF41D0A411B0031DE78 /* Assets.xcassets */,
+				704E8FFA1D0B23CB0031DE78 /* We_Can_Do_It!.jpg */,
 				1CFB3DDD1D07592400DFA42C /* LaunchScreen.storyboard */,
 				1CFB3DD81D07592400DFA42C /* Main.storyboard */,
 			);
@@ -114,8 +115,7 @@
 		704E8FF11D0A406F0031DE78 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				704E8FF81D0A5B5C0031DE78 /* you-can-do-eet.jpeg */,
-				704E8FF61D0A417E0031DE78 /* We_Can_Do_It!.jpg */,
+				704E8FFC1D0B23DD0031DE78 /* you-can-do-eet.jpeg */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -178,10 +178,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				704E8FF91D0A5B5C0031DE78 /* you-can-do-eet.jpeg in Resources */,
+				704E8FFD1D0B23DD0031DE78 /* you-can-do-eet.jpeg in Resources */,
 				1CFB3DDF1D07592400DFA42C /* LaunchScreen.storyboard in Resources */,
-				704E8FF71D0A417E0031DE78 /* We_Can_Do_It!.jpg in Resources */,
 				704E8FF51D0A411B0031DE78 /* Assets.xcassets in Resources */,
+				704E8FFB1D0B23CB0031DE78 /* We_Can_Do_It!.jpg in Resources */,
 				1CFB3DDA1D07592400DFA42C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -315,6 +315,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				INFOPLIST_FILE = Roster/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.michaelbabiy.Roster;
@@ -326,6 +327,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				INFOPLIST_FILE = Roster/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.michaelbabiy.Roster;

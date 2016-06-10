@@ -25,7 +25,7 @@
                                     <tableViewCell clipsSubviews="YES" alpha="0.25" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="studentCell" textLabel="kgS-db-Z5W" style="IBUITableViewCellStyleDefault" id="9qi-39-ltv">
                                         <rect key="frame" x="0.0" y="92" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9qi-39-ltv" id="Ifa-X4-Uot">
+                                        <tableViewCellContentView key="contentView" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9qi-39-ltv" id="Ifa-X4-Uot">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
@@ -37,7 +37,6 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </tableViewCell>
@@ -116,7 +115,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" placeholderIntrinsicWidth="174" placeholderIntrinsicHeight="98" image="you-can-do-eet.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="8MP-JN-97V">
-                                <rect key="frame" x="126" y="278" width="174" height="98"/>
+                                <rect key="frame" x="213" y="278" width="174" height="98"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="174" id="A2P-1R-aK0"/>
                                     <constraint firstAttribute="height" constant="98" id="SfC-4G-jVF"/>

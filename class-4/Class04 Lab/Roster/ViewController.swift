@@ -38,12 +38,9 @@ extension ViewController: UITableViewDataSource
 {
     // MARK: Helper Functions
     
-    func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
-        cell.backgroundColor = .clearColor()
-    }
-    
     func configureCell(indexPath: NSIndexPath) -> UITableViewCell
     {
+        
         let cell = self.tableView.dequeueReusableCellWithIdentifier("studentCell", forIndexPath: indexPath)
         let task = TaskStore.shared.allObjects()[indexPath.row]
         
@@ -51,6 +48,9 @@ extension ViewController: UITableViewDataSource
         // Missing model.
         
         // Missing setup.
+        cell.contentView.backgroundColor = UIColor.whiteColor()
+        cell.contentView.alpha = 0.75
+
         
         return cell
     }
